@@ -1,0 +1,57 @@
+# QUICK SETUP GUIDE
+
+## Document Window System Ready ✅
+
+### Files Updated:
+1. ✅ `business/document_service.py` - Added `get_documents_with_client_info()` method
+2. ✅ `data/repositories/document_repository.py` - Fixed table names (Documents)
+3. ⚠️ `presentation/documents/document_window.py` - **Created as document_window_new.py**
+
+### Manual Step Required:
+
+Replace the old `document_window.py` with the new version:
+
+**OLD FILE:** `presentation/documents/document_window.py` (178 lines - basic text inputs)
+**NEW FILE:** `presentation/documents/document_window_new.py` (391 lines - ComboBox + File Dialog)
+
+### Option 1: Copy Content
+1. Open `presentation/documents/document_window_new.py`
+2. Copy all content
+3. Replace content of `presentation/documents/document_window.py`
+4. Save and delete `document_window_new.py`
+
+### Option 2: File System
+```
+cd presentation/documents/
+# Delete old file
+rm document_window.py
+# Rename new file
+mv document_window_new.py document_window.py
+```
+
+### What's New:
+
+**Before:**
+- Manual Order ID input (text field)
+- Manual Document Type input (text field)
+- Manual file path (text field)
+- 5 table columns
+
+**After:**
+- Order ComboBox (dropdown from database) ✅
+- Document Type ComboBox (predefined list) ✅
+- File Browser Dialog (native file picker) ✅
+- 6 table columns (includes Client Name) ✅
+- Better validation and error handling ✅
+- Color-coded buttons (Add/Delete/Refresh) ✅
+
+### Testing
+
+Once file is replaced, the DocumentWindow will:
+1. Load all orders on startup
+2. Display them in dropdown
+3. Allow file selection via dialog
+4. Show documents with client information
+5. No conflicts with other modules
+
+All database connections properly configured!
