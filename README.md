@@ -1,26 +1,26 @@
-# Информационная система для улучшения бизнес-процессов в сфере продаж
+# Information System for Improving Business Processes in Sales
 
-## О проекте
+## About the Project
 
-Данный проект представляет собой информационную систему для автоматизации и оптимизации бизнес-процессов в сфере продаж.
+This project is an information system designed to automate and optimize business processes in the sales sector.
 
-Система разработана в рамках дипломного проекта по направлению **«Прикладная информатика в экономике»**.
+The system was developed as part of a graduation project in the field of **Applied Informatics in Economics**.
 
-Основная задача проекта — автоматизировать работу менеджеров с клиентами, товарами, продажами и документами, сократить количество ручных операций и повысить эффективность обработки информации.
+The main goal of the project is to automate managers' work with customers, products, sales, and documents, reduce the number of manual operations, and improve information processing efficiency.
 
-## Возможности системы
+## System Features
 
-* управление клиентами;
-* управление товарами;
-* оформление и обработка продаж;
-* формирование документов;
-* хранение информации в базе данных;
-* поиск и фильтрация данных;
-* формирование отчетов;
-* централизованная работа с данными;
-* удобный графический интерфейс.
+* customer management;
+* product management;
+* sales processing;
+* document generation;
+* database information storage;
+* data search and filtering;
+* report generation;
+* centralized data management;
+* user-friendly graphical interface.
 
-## Технологический стек
+## Technology Stack
 
 ### Backend / Application
 
@@ -32,73 +32,73 @@
 
 * **MySQL**
 
-### Архитектура
+### Architecture
 
-* трехуровневая архитектура:
+The system uses a three-tier architecture:
 
-  * Presentation Layer — пользовательский интерфейс;
-  * Business Logic Layer — бизнес-логика приложения;
-  * Data Access Layer — взаимодействие с базой данных.
+* **Presentation Layer** — user interface;
+* **Business Logic Layer** — application business logic;
+* **Data Access Layer** — interaction with the database.
 
-## Структура проекта
+## Project Structure
 
 ```text
 project/
 │
-├── database/              # Работа с базой данных
-├── models/                # Модели данных
-├── repositories/          # Работа с данными
-├── services/              # Бизнес-логика
-├── ui/                    # Пользовательский интерфейс
-├── utils/                 # Вспомогательные функции
-├── config/                # Конфигурация приложения
-├── main.py                # Точка входа
-├── requirements.txt       # Зависимости проекта
-└── README.md              # Документация
+├── database/              # Database operations
+├── models/                # Data models
+├── repositories/          # Data access layer
+├── services/              # Business logic
+├── ui/                    # User interface
+├── utils/                 # Utility functions
+├── config/                # Application configuration
+├── main.py                # Application entry point
+├── requirements.txt       # Project dependencies
+└── README.md              # Documentation
 ```
 
-> Структура может отличаться в зависимости от текущей версии проекта.
+> The project structure may vary depending on the current version of the application.
 
-## Требования
+## Requirements
 
-Для запуска проекта необходимо установить:
+To run the project, you need to install:
 
-* Python 3.9 или выше;
+* Python 3.9 or higher;
 * MySQL;
 * Git.
 
-## Установка
+## Installation
 
-### 1. Клонирование репозитория
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/USERNAME/REPOSITORY.git
-cd REPOSITORY
+git clone https://github.com/Vafobekov04/myproproject.git
+cd myproproject
 ```
 
-### 2. Создание виртуального окружения
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-Активация виртуального окружения в Windows:
+Activate the virtual environment on Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-### 3. Установка зависимостей
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Настройка базы данных
+### 4. Configure the Database
 
-Создайте базу данных MySQL и настройте параметры подключения в конфигурационном файле проекта.
+Create a MySQL database and configure the connection parameters in the project configuration file.
 
-При использовании `.env`:
+If using `.env`:
 
 ```env
 DB_HOST=localhost
@@ -108,74 +108,72 @@ DB_USER=root
 DB_PASSWORD=your_password
 ```
 
-> Не публикуйте реальные пароли и другие конфиденциальные данные в GitHub.
+> Do not publish real passwords or other sensitive information on GitHub.
 
-### 5. Запуск приложения
+### 5. Run the Application
 
 ```bash
 python main.py
 ```
 
-## Основные модули
+## Main Modules
 
-### 👥 Клиенты
+### 👥 Customers
 
-Позволяет хранить и редактировать информацию о клиентах, необходимую для работы менеджеров.
+Allows users to store and edit customer information required for managers' daily operations.
 
-### 📦 Товары
+### 📦 Products
 
-Предоставляет возможность добавления, редактирования, удаления и поиска товаров.
+Provides functionality for adding, editing, deleting, and searching for products.
 
-### 💰 Продажи
+### 💰 Sales
 
-Позволяет оформлять продажи и хранить информацию о выполненных операциях.
+Allows users to process sales and store information about completed transactions.
 
-### 📄 Документы
+### 📄 Documents
 
-Система позволяет формировать необходимые документы на основе данных о продажах.
+The system can generate the required documents based on sales data.
 
-### 📊 Отчеты
+### 📊 Reports
 
-Предоставляет инструменты для анализа информации и формирования отчетных данных.
+Provides tools for analyzing information and generating reports.
 
-### 🔎 Поиск и фильтрация
+### 🔎 Search and Filtering
 
-Позволяет быстро находить необходимые записи и работать с большими объемами информации.
+Allows users to quickly find the required records and work efficiently with large amounts of information.
 
-## Результат автоматизации
+## Automation Results
 
-В рамках исследования и разработки системы были получены следующие результаты:
+The following results were obtained during the research and development of the system:
 
-* снижение трудозатрат после автоматизации — **87,80%**;
-* сокращение затрат — **88,56%**;
-* расчетный срок окупаемости — около **2 месяцев**;
-* расчетный годовой экономический эффект — **437 079,28 ₽**.
+* reduction in labor costs after automation — **87.80%**;
+* reduction in overall costs — **88.56%**;
+* estimated payback period — approximately **2 months**;
+* estimated annual economic effect — **437,079.28 RUB**.
 
-## Назначение проекта
+## Project Purpose
 
-Система предназначена для использования менеджерами, работающими с клиентами, товарами, продажами и сопутствующей документацией.
+The system is intended for managers who work with customers, products, sales, and related documentation.
 
-Проект может использоваться как основа для дальнейшего развития информационной системы и внедрения дополнительных функций автоматизации.
+The project can also serve as a foundation for further development of the information system and implementation of additional automation features.
 
-## Дальнейшее развитие
+## Future Development
 
-Возможные направления развития проекта:
+Possible directions for further development include:
 
-* разработка веб-версии системы;
-* добавление системы авторизации;
-* разграничение прав пользователей;
-* расширение аналитики и отчетности;
-* интеграция с внешними сервисами;
-* добавление REST API;
-* переход к серверной архитектуре;
-* разработка мобильного клиента.
+* development of a web version;
+* implementation of user authentication;
+* role-based access control;
+* expansion of analytics and reporting;
+* integration with external services;
+* development of a REST API;
+* transition to a server-based architecture;
+* development of a mobile client.
 
-## Автор
+## Author
 
-**Вафобек Вафобеков**
+**Vafobek Vafobekov**
 
-Направление: **09.03.03 «Прикладная информатика»**
+Field of Study: **09.03.03 — Applied Informatics**
 
-Проект выполнен в рамках выпускной квалификационной работы.
-
----
+The project was developed as part of a **graduation thesis**.
