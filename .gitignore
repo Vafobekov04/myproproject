@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# C#
+bin/
+obj/
+
+# Environment / secrets
+.env
+
+# Databases
+*.db
+*.sqlite
+
+# IDE
+*.user
+*.suo
